@@ -76,10 +76,14 @@ Membangun sistem perpustakaan digital yang:
 ## Timeline & Progress Pengerjaan
 ### Status Saat Ini: Berada di Minggu ke-2. Fitur dasar backend sedang diselesaikan, dan beberapa poin sudah berhasil dicapai lebih cepat dari jadwal.
 
-## Minggu 1 
+## Minggu 1 - Foundation & Authentication System
+
+### Backend Foundation
 - [x] Setup project Laravel 11
 - [x] Konfigurasi database MySQL
 - [x] Setup environment (.env)
+- [x] Troubleshooting koneksi database MySQL
+- [x] Konfigurasi CACHE_STORE=file untuk recovery artisan
 - [x] Setup struktur folder project
 - [x] Setup migration database
 - [x] Membuat model utama (User, Book, Category, Borrowing)
@@ -87,16 +91,33 @@ Membangun sistem perpustakaan digital yang:
 - [x] Setup role admin & member
 - [x] Setup middleware role
 - [x] Membuat route awal
+- [x] Restrukturisasi route member dashboard
+- [x] Setup redirect login berdasarkan role
 - [x] Membuat struktur controller
 - [x] Setup service layer architecture
+- [x] Setup dashboard admin & member terpisah
+- [x] Implementasi statistik dashboard awal
+- [x] Setup Tailwind CSS
+- [x] Setup layout dashboard dark theme
+
+### Frontend & UI/UX
 - [ ] Mendesain dashboard admin di Figma
 - [ ] Mendesain halaman login
 - [ ] Mendesain sidebar & layout
 - [ ] Menentukan color palette & typography
-- [ ] Diskusi flow sistem & alur user
-- [ ] Setup dokumentasi testing
+- [ ] Mendesain dashboard member
+- [ ] Mendesain halaman katalog buku
 
-## Minggu 2
+### Team Collaboration
+- [ ] Diskusi flow sistem & alur user
+- [ ] Penyusunan workflow peminjaman
+- [ ] Penyusunan flow role admin/member
+- [ ] Setup dokumentasi testing
+- [ ] Setup GitHub repository & branch workflow
+
+## Minggu 2 - Core Backend Development
+
+### Backend Core Features
 - [x] CRUD Books
 - [x] CRUD Categories
 - [x] Borrowing System
@@ -108,22 +129,46 @@ Membangun sistem perpustakaan digital yang:
 - [x] Dashboard statistics logic
 - [x] Eloquent relationships
 - [x] Query optimization dasar
+- [x] Restrukturisasi query dashboard
+- [x] Setup relasi borrowing → user → books
+- [x] Setup status borrowing (borrowed, returned, overdue)
+- [x] Setup due_date dan return_date
+- [x] Middleware protection admin/member
+- [x] Refactor authentication flow
+
+### Frontend Development
 - [ ] Membuat halaman dashboard admin
 - [ ] Membuat halaman manage books
 - [ ] Membuat halaman login responsive
 - [ ] Membuat component sidebar
+- [ ] Membuat component topbar
 - [ ] Membuat table books
+- [ ] Membuat modal form CRUD
 - [ ] Sinkronisasi variable blade
+- [ ] Responsive layout dashboard
+
+### Testing & QA
 - [ ] Testing login & CRUD
 - [ ] Testing role access
+- [ ] Testing borrowing flow
+- [ ] Testing database consistency
 
-## Minggu 3 —
+## Minggu 3 - Frontend Integration & Smart Features
+
+### Backend & Smart Features
 - [x] Menyiapkan data untuk frontend
 - [x] Finalisasi route & endpoint
 - [x] Finalisasi validation
-- [x] Integrasi Gemini API
-- [x] Integrasi notification realtime
 - [x] Optimasi query database
+- [x] Refactor controller structure
+- [x] Cleanup duplicated route
+- [ ] Integrasi Gemini API
+- [ ] Integrasi notification realtime
+- [ ] Setup chatbot service
+- [ ] Setup AI recommendation engine
+- [ ] Setup realtime notification event
+
+### Frontend Integration
 - [ ] Integrasi blade dengan backend
 - [ ] Responsive dashboard
 - [ ] Halaman catalog member
@@ -131,26 +176,51 @@ Membangun sistem perpustakaan digital yang:
 - [ ] Statistik dashboard
 - [ ] Integrasi Chart.js
 - [ ] Integrasi fullstack
+- [ ] Loading animation & skeleton
+- [ ] Empty state UI
+- [ ] Toast notification UI
+
+### Testing & QA
 - [ ] Testing borrowing flow
 - [ ] Testing responsive layout
 - [ ] Testing AI chatbot
+- [ ] Testing notification realtime
+- [ ] Testing frontend-backend integration
 
-## Minggu 4
+## Minggu 4 - Finalization & Deployment
+
+### Backend Finalization
 - [x] Fix bug backend
 - [x] Security validation
 - [x] Optimize Laravel
 - [x] Final route cleanup
 - [x] Final database cleanup
+- [x] Cleanup unused controller
+- [x] Refactor duplicated logic
+- [ ] API response standardization
+- [ ] Error handling improvement
+- [ ] Final performance optimization
+
+### Frontend Polish
 - [ ] UI polishing
 - [ ] Final responsive fixing
 - [ ] Animation & UX refinement
+- [ ] Final typography refinement
+- [ ] Final spacing consistency
+- [ ] Dashboard animation polishing
+- [ ] Mobile responsive optimization
+
+### Testing & Deployment
 - [ ] Full system testing
 - [ ] Testing semua fitur
 - [ ] Testing edge cases
 - [ ] Bug reporting
+- [ ] Final QA testing
 - [ ] Deployment ke hosting
+- [ ] Konfigurasi production environment
 - [ ] Final dokumentasi
 - [ ] Persiapan presentasi
+- [ ] Persiapan demo sistem
 
 ---
 
